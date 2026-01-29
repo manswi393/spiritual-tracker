@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spiritual Japa & Meditation Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🕉️ Spiritual Japa & Meditation Tracker</h1>
+    <p>Track your daily spiritual practice</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#login">Login</a>
+    <a href="#tracker">Daily Tracker</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h2>Welcome 🙏</h2>
+    <p>
+        This platform helps you maintain a daily record of your
+        <strong>Japa count</strong> and <strong>Meditation time</strong>.
+        Regular practice brings peace, discipline, and spiritual growth.
+    </p>
+</section>
+
+<!-- LOGIN -->
+<section id="login">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="login()">Login</button>
+    <p id="loginStatus"></p>
+</section>
+
+<!-- TRACKER -->
+<section id="tracker">
+    <h2>Daily Spiritual Tracker</h2>
+
+    <div class="card">
+        <label>Japa Count (number of chants)</label>
+        <input type="number" id="japaCount" placeholder="Eg: 108">
+    </div>
+
+    <div class="card">
+        <label>Meditation Time (minutes)</label>
+        <input type="number" id="meditationTime" placeholder="Eg: 30">
+    </div>
+
+    <button onclick="saveRecord()">Save Today’s Record</button>
+
+    <h3>Your Daily Record</h3>
+    <div id="records"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: spiritualpath@gmail.com</p>
+    <p>May peace and positivity be with you 🌸</p>
+</section>
+
+<footer>
+    <p>© 2026 Spiritual Tracker | Designed with devotion 🕉️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
